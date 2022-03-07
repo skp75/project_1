@@ -1,3 +1,41 @@
+/*DEVELOPER: Shrut Patel, IS117-101, Fall, 2021 */
 body {
-font-size: 200%;
+  background: #E1BD3D;
 }
+
+h2 {
+  font-family: Chalkduster, fantasy ;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+  color:  white;
+  background-color: #BD9C0E;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.footer {
+  color: #0D0808  ;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #C39800;
+  text-align: center;
+  padding: 10px;
+}
+
+
