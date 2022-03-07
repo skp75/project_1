@@ -11,27 +11,68 @@
     {% block head %}
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
 
-        <title>{% block title %}{% endblock %}This is {{ name }} Website</title>
+        <title>Project 1</title>
     {% endblock %}
 
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <header class="mb-5">
-            <!-- As a link -->
-            <nav class="navbar navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<div class="container-fluid">
+    <div class="topnav-centered">
+        <div class="row">
+            <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="index.html"> <h2>Everything Soccer </h2></a>
+
+                <!-- Responsive Button for the smaller menu -->
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+
+                        <!-- Links -->
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Teams
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="liverpool.html">Liverpool</a>
+                                <a class="dropdown-item" href="mancity.html">Man City</a>
+                                <a class="dropdown-item" href="chelsea.html">Chelsea</a>
+                                <a class="dropdown-item" href="manunited.html">Man United</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="feat.html" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Featured
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="head.html">Head-on-head</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Subscribe</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-        </header>
-    </div>
+
+
+</div>
     <div class="row">
         Hello, World!
     </div>
