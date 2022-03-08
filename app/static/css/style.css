@@ -57,8 +57,8 @@ img {
   border-radius: 10px;
   display: flex;
   flex-shrink: 0;
-  font-size: 100px;
-  height: 600px;
+  font-size: 50px;
+  height: 300px;
   justify-content: center;
   margin: 0 1rem;
   position: relative;
@@ -66,7 +66,7 @@ img {
   transform: scale(1);
   transform-origin: center center;
   transition: transform .5s;
-  width: 100%;
+  width: 80%;
 }
 
 .carousel__nav {
