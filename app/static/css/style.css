@@ -37,8 +37,6 @@ img {
   text-align: center;
   padding: 10px;
 }
-
-
 .carousel {
   margin: 0 auto;
   overflow: hidden;
@@ -47,8 +45,14 @@ img {
 
 .slides {
   display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+}
+
+.slides::-webkit-scrollbar {
+  display: none;
 }
 
 .slides-item {
@@ -56,8 +60,8 @@ img {
   border-radius: 10px;
   display: flex;
   flex-shrink: 0;
-  font-size: 50px;
-  height: 300px;
+  font-size: 100px;
+  height: 600px;
   justify-content: center;
   margin: 0 1rem;
   position: relative;
@@ -93,28 +97,44 @@ img {
 }
 
 .slide-1 {
-  background-color: #e8e6a9;
+  background-color: #fdc;
 }
 
 .slide-2 {
-  background-color: #e8e6a9;
+  background-color: #bfd;
 }
 
 .slide-3 {
-  background-color: #e8e6a9;
+  background-color: #cdf;
 }
 
 .slide-4 {
-  background-color: #e8e6a9;
+  background-color: #dca;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.carousel__skip-link {
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.carousel__skip-link:focus {
+  align-items: center;
+  background-color: #ddd;
+  color: #fff;
+  display: flex;
+  height: 600px;
+  justify-content: center;
+  opacity: .8;
+  width: 100%;
+  z-index: 10;
 }
 
+.carousel__skip-message {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem;
+  width: 100%;
+}
