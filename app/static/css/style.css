@@ -47,7 +47,6 @@ img {
 
 .slides {
   display: flex;
-  overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
@@ -94,19 +93,19 @@ img {
 }
 
 .slide-1 {
-  background-color: #fdc;
+  background-color: #e8e6a9;
 }
 
 .slide-2 {
-  background-color: #bfd;
+  background-color: #e8e6a9;
 }
 
 .slide-3 {
-  background-color: #cdf;
+  background-color: #e8e6a9;
 }
 
 .slide-4 {
-  background-color: #dca;
+  background-color: #e8e6a9;
 }
 
 @-webkit-keyframes fade {
