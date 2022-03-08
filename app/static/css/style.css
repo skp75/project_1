@@ -37,6 +37,8 @@ img {
   text-align: center;
   padding: 10px;
 }
+
+
 .carousel {
   margin: 0 auto;
   overflow: hidden;
@@ -46,13 +48,8 @@ img {
 .slides {
   display: flex;
   overflow-x: scroll;
-  scrollbar-width: none;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-}
-
-.slides::-webkit-scrollbar {
-  display: none;
 }
 
 .slides-item {
@@ -61,7 +58,7 @@ img {
   display: flex;
   flex-shrink: 0;
   font-size: 100px;
-  height: 600px;
+  height: 400px;
   justify-content: center;
   margin: 0 1rem;
   position: relative;
@@ -110,31 +107,4 @@ img {
 
 .slide-4 {
   background-color: #dca;
-}
-
-.carousel__skip-link {
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  top: auto;
-  width: 1px;
-}
-
-.carousel__skip-link:focus {
-  align-items: center;
-  background-color: #ddd;
-  color: #fff;
-  display: flex;
-  height: 600px;
-  justify-content: center;
-  opacity: .8;
-  width: 100%;
-  z-index: 10;
-}
-
-.carousel__skip-message {
-  background-color: #000;
-  color: #fff;
-  padding: 0.5rem;
-  width: 100%;
 }
